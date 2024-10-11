@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Infinite Secrets of Pi</title>
+    <title>The Infinite Secrets of Pi - Interactive Explorer</title>
     <style>
         body {
             font-family: 'Georgia', serif;
@@ -47,6 +47,40 @@
             font-weight: bold;
             color: #666;
         }
+        .resource-link {
+            display: inline-block;
+            margin: 1rem 0;
+            padding: 0.5rem 1rem;
+            background: #e74c3c;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background 0.3s ease;
+        }
+        .resource-link:hover {
+            background: #c0392b;
+        }
+        .interactive-section {
+            background: #f9f9f9;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .search-box {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #e74c3c;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .result-box {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-top: 15px;
+            border-radius: 4px;
+        }
     </style>
 </head>
 <body>
@@ -76,24 +110,29 @@
             <li>The solution to achieving world peace</li>
         </ul>
         
-        <h2>The Universe in a Number</h2>
-        <p>If we could find a way to decode Pi, to understand the pattern behind its seemingly random progression of digits, would we unlock the secrets of existence itself? Some believe that the very fabric of our universe might be woven with the threads of this mysterious number.</p>
-        
-        <h3>Known Facts About Pi</h3>
-        <ol>
-            <li>Pi has been calculated to over 100 trillion digits</li>
-            <li>No pattern has ever been found in its decimal expansion</li>
-            <li>It appears naturally in equations describing fundamental aspects of the universe</li>
-        </ol>
+        <div class="interactive-section">
+            <h2>Explore the Depths of Pi</h2>
+            <p>Venture into the infinite expanse of Pi's digits through our mystical gateways:</p>
+            
+            <h3>The First Billion Digits</h3>
+            <p>Journey through the first billion decimal places of Pi. Each digit is a thread in the cosmic tapestry of existence.</p>
+            <a href="https://stuff.mit.edu/afs/sipb/contrib/pi/pi-billion.txt" class="resource-link" target="_blank">Access the Cosmic Codex</a>
+            
+            <h3>Divine Word Search</h3>
+            <p>What message has the universe hidden for you in the infinite depths of Pi? Enter a word to discover its numerical manifestation:</p>
+            <input type="text" class="search-box" placeholder="Enter a word to search in Pi..." 
+                   onkeyup="if (event.key === 'Enter') window.open('https://www.atractor.pt/fromPI/PIalphasearch-_en.html?w=' + this.value, '_blank')">
+            <a href="https://www.atractor.pt/fromPI/PIalphasearch-_en.html" class="resource-link" target="_blank">Open the Oracle</a>
+        </div>
+
+        <h2>Beyond Mathematics</h2>
+        <p>Perhaps the true significance of Pi lies not in what secrets it might contain, but in what it represents: the eternal mystery of existence, the endless quest for knowledge, and the beautiful intersection of the finite and the infinite.</p>
         
         <div class="quote">
             "The digits of Pi are random. But they're not. They're predetermined, yet unpredictable. They contain every story, every secret, every truth."
             <span class="attribution">- Eloi Bonet Aspizua</span>
         </div>
-        
-        <h2>Beyond Mathematics</h2>
-        <p>Perhaps the true significance of Pi lies not in what secrets it might contain, but in what it represents: the eternal mystery of existence, the endless quest for knowledge, and the beautiful intersection of the finite and the infinite.</p>
-        
+
         <footer>
             <p><em>Remember: The next time you look at a circle, you're not just seeing a shape. You're seeing a window into the infinite, a glimpse of all the secrets of the universe, hidden in plain sight.</em></p>
             <p><strong>All insights and quotes by Eloi Bonet Aspizua</strong></p>
